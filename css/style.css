@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marmelad', sans-serif;
+}
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding: 0 50px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+a.logo {
+    display: block;
+    width: 70px;
+    height: 50px;
+    transform: translateY(10%);
+}
+.logo_img {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.menu_item {
+    text-align: center;
+    font-size: 16px;
+    line-height: 55px;
+}
+.menu_link {
+    text-decoration: none;
+    color: white;
+}
+.contacts {
+    margin-top: 15px;
+}
+.phone {
+    color: white;
+    font-size: 21px;
+}
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.promo {
+    min-height: 600px;
+	background: url("../img/promo_bg3.jpg") center center/cover no-repeat;
+	padding: 10px 100px 50px 100px;
+    position: relative;
+}
+.promo_header {
+	color: #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 78px;
+    margin-top: 80px;
+	margin-bottom: 0;
+}
+.promo_subheader {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 28px;
+	text-align: center;
+	line-height: 34px;
+	margin-bottom: 0;
+	margin-top: 39px;
+}
+
+
+.promo_btn {
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}  
+
+
+.promo_href {
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+button {
+    position: relative;
+    height: 63px;
+    width: 259px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+    /* z-index: 1; */
+  }
+  
+  button:before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 50px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+    opacity: 1;
+  }
+  
+  button:hover:active {
+    background: none;
+  }
+
+  button:hover:active:before {
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+.about {
+    padding: 50px 100px;
+}
+.about_subheader {
+    color: #ffffff;
+	font-weight: 300;
+	font-size: 36px;
+	text-align: center;
+	line-height: 45px;
+}
+.about_descr {
+    color: #ffffff;
+	font-weight: 300;
+	font-size: 25px;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 50px;
+}
+
+
+.how {
+    padding: 30px 100px;
+}
+.how_subheader {
+    color: #ffffff;
+	font-weight: 300;
+	font-size: 36px;
+	text-align: center;
+	line-height: 45px;
+	margin-bottom: 30px;
+}
+.how_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.how_block {
+    position: relative;
+    border-radius: 5%;
+    margin: 45px;
+    width: 300px;
+    min-height: 300px;
+    padding: 20px;
+    box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
+}
+.how_block_img {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.how_header {
+    color: #ffffff;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.how_desxr {
+    color: #ffffff;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+.line {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+    height: 5px;
+    background: #19d9c3;
+    box-shadow: 0 -200px 100px -120px #19d9c3 inset;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
+  
+    animation: background 3s infinite ;
+  }
+  
+  @keyframes background {
+    50% {
+       background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.1) inset; 
+    }
+  }
