@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-    <section class="promo">
+    <nav class="promo">
         <div class="container">
-            <div class="header">
-                <a href="#" class="logo"><img class="logo_img" src="icons/Logo_gif.gif" alt="Logo"></a>
+            <div class="header_top">
+                <a href="#" class="logo"><img class="logo_img" src="icons/Logo.gif" alt="Logo"></a>
                     <ul class="menu">
                         <li class="menu_item"><a href="#" class="menu_link">О нас</a></li>
                         <li class="menu_item"><a href="#" class="menu_link">Галерея</a></li>
@@ -40,7 +41,42 @@
                 <button><a target="_blank" href="https://wa.me/+79153684324" class="promo_href">Получить консультацию!</a></button>
             </div> 
         </div>
-    </section>
+    </nav>
+
+            <!-- МОБИЛЬНОЕ МЕНЮ -->
+
+
+    <nav class="promo_mobile">
+        <div class="container">
+            <div class="header_mobile">
+                <a href="#" class="logo"><img class="logo_img" src="icons/Logo.gif" alt="Logo"></a>
+                <ul class="menu_mobile">
+                    <a href="#" class="logo"><img class="logo_img_ul" src="icons/Logo.gif" alt="Logo"></a>
+                    <li class="menu_item_mobile"><a href="#" class="menu_link_mobile">О нас</a></li>
+                    <li class="menu_item_mobile"><a href="#require" class="menu_link_mobile">Галерея</a></li>
+                    <li class="menu_item_mobile"><a href="#require" class="menu_link_mobile">Оплата и доставка</a></li>
+                    <li class="menu_item_mobile"><a href="#rt" class="menu_link_mobile">Контакты</a></li>
+                    <div class="contacts">
+                        <a href="tel:+79153684324" class="phone">+7 (915) 368-43-24</a>
+                        <div class="social">
+                            <a target="_blank" href="https://wa.me/+79153684324" class="social-item"><img class="social_img" src="icons/whatsapp.svg" alt="WhatsApp"></a>
+                            <a target="_blank" href="https://t.me/+79153684324" class="social-item"><img class="social_img" src="icons/telegram.svg" alt="Telegram"></a>
+                            <a target="_blank" href="#" class="social-item"><img class="social_img" src="icons/vk.svg" alt="VK"></a>
+                            <a target="_blank" href="#" class="social-item"><img class="social_img" src="icons/pinterest.svg" alt="Pinterest"></a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </nav>
+
+
+                <!-- МОБИЛЬНОЕ МЕНЮ -->
 
 
     <section class="about">
@@ -92,5 +128,14 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+    <script src="js/Script.js"></script>
+
+
 </body>
 </html>

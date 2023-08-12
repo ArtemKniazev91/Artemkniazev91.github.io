@@ -13,6 +13,10 @@ a {
 .container {
     padding: 0 50px;
 }
+.header_top {
+    display: flex;
+    justify-content: space-between;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -135,8 +139,6 @@ button {
     background: none;
   }
 
-  button:hover:active:before {
-  }
   
   @keyframes animate {
     0% {
@@ -247,3 +249,51 @@ button {
       box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.1) inset; 
     }
   }
+
+
+/* Мобильное меню */
+
+
+.header_mobile {
+    display: flex;
+    justify-content: space-between;
+}
+.promo_mobile {
+    display: none;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #000000;
+}
+.logo_img {	
+	width: 78px;
+	height: 50px;
+}
+.logo_img_ul {
+	display: none;
+	width: 78px;
+	height: 50px;
+}
+.hamburger {
+	display: none;
+}
+.menu_mobile {
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 70px;
+	margin: 0;
+	list-style-type: none;
+}
+.menu_item_mobile {
+    text-align: center;
+    font-size: 16px;
+    line-height: 55px;
+}
+.menu_link_mobile {
+	margin: 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	text-decoration: none;
+}
