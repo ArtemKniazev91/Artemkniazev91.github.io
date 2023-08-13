@@ -10,9 +10,15 @@ body {
 a {
     text-decoration: none;
 }
-.container {
-    padding: 0 50px;
+.subheader {
+    color: white;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 30px;
 }
+
 .header_top {
     display: flex;
     justify-content: space-between;
@@ -54,7 +60,7 @@ a.logo {
     font-size: 21px;
 }
 .social {
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
     
@@ -170,6 +176,7 @@ button {
 	font-size: 36px;
 	text-align: center;
 	line-height: 45px;
+    margin-bottom: 30px;
 }
 .about_descr {
     color: #ffffff;
@@ -296,4 +303,110 @@ button {
 	font-size: 15px;
 	font-weight: 300;
 	text-decoration: none;
+}
+
+/* Мобильное меню */
+
+.colors {
+    padding: 50px;
+}
+.colors_subheader {
+    color: white;
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+.colors_blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.colors_block {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 25px;
+}
+.colors_description {
+    position: absolute;
+    left: 10px;
+    bottom:5px;
+    color:white;
+    font-size: 14px;
+}
+.colors_block_1 {
+    background: url("../img/Cold.jpeg") center center/cover no-repeat;    
+}
+.colors_block_1:hover {
+    box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.8);
+}
+.colors_block_2 {
+    background: url("../img/warm.jpeg") center center/cover no-repeat;    
+}
+.colors_block_2:hover {
+    box-shadow: 0 0 20px 15px rgba(250, 240, 230, 0.8);
+}
+.colors_block_3 {
+    background: url("../img/blue.jpeg") center center/cover no-repeat;    
+}
+.colors_block_3:hover {
+    box-shadow: 0 0 20px 15px rgba(107, 229, 251, 0.8);
+}
+.colors_block_4 {
+    background: url("../img/blue_br.jpeg") center center/cover no-repeat;    
+}
+.colors_block_4:hover {
+    box-shadow: 0 0 20px 15px rgba(51, 14, 218, 0.8);
+}
+.colors_block_5 {
+    background: url("../img/green.jpeg") center center/cover no-repeat;    
+}
+.colors_block_5:hover {
+    box-shadow: 0 0 20px 15px rgba(111, 217, 125, 0.8);
+}
+.colors_block_6 {
+    background: url("../img/orange.jpeg") center center/cover no-repeat;    
+}
+.colors_block_6:hover {
+    box-shadow: 0 0 20px 15px rgba(241, 157, 59, 0.8);
+}
+.colors_block_7 {
+    background: url("../img/pink.jpeg") center center/cover no-repeat;    
+}
+.colors_block_7:hover {
+    box-shadow: 0 0 20px 15px rgba(187, 38, 135, 0.8);
+}
+.colors_block_8 {
+    background: url("../img/red.jpeg") center center/cover no-repeat;    
+}
+.colors_block_8:hover {
+    box-shadow: 0 0 20px 15px rgba(229, 52, 35, 0.8);
+}
+.colors_block_9 {
+    background: url("../img/violet.jpeg") center center/cover no-repeat;    
+}
+.colors_block_9:hover {
+    box-shadow: 0 0 20px 15px rgba(179, 41, 217, 0.8);
+}
+.colors_block_10 {
+    background: url("../img/yellow.jpeg") center center/cover no-repeat;    
+}
+.colors_block_10:hover {
+    box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
+}
+
+.price {
+    padding: 50px 100px;
+}
+.price_descr {
+    color: #ffffff;
+	font-weight: 300;
+	font-size: 25px;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 50px;
 }
