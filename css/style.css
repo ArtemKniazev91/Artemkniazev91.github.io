@@ -111,7 +111,7 @@ a.logo {
     font-size: 20px;
     color: white;
 }
-button {
+.promo_button {
     position: relative;
     height: 63px;
     width: 259px;
@@ -125,7 +125,7 @@ button {
     /* z-index: 1; */
   }
   
-  button:before {
+  .promo_button:before {
     position: absolute;
     content: '';
     top: -2px;
@@ -141,7 +141,7 @@ button {
     opacity: 1;
   }
   
-  button:hover:active {
+  .promo_button:hover:active {
     background: none;
   }
 
@@ -200,16 +200,70 @@ button {
 	line-height: 45px;
     margin-bottom: 30px;
 }
-.gallery_block {
- display: flex;
- justify-content: space-between;
+.wrap {
+    max-width: 1140px;
+    margin: 100px auto;
 }
-.gallery_img {
-    display: block;
-    width: 33%;
-    /* height: 33%; */
+.wedding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding: 0px 60px;
+}
+.wedding .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -15px 0 0 0; 
+    z-index: 2; 
+    font-size: 0; 
+    width: 30px; 
+    height: 30px; 
+}
+.wedding .slick-arrow.slick-prev{
+    left: 0; 
+    background: url('../icons/left.png') 0 0 / 100% no-repeat;
+    border: none;
+    cursor: pointer;
 }
 
+.wedding .slick-arrow.slick-next{
+    right: 0; 
+    background: url('../icons/right.png') 0 0 / 100% no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.wedding .slick-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.wedding .slick-dots button {
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px; 
+    margin: 5px; 
+    outline: none; 
+    font-size: 0;
+}
+.slick-dots li[class="slick-active"] button {
+    background: gray;
+}
+.wedding__item {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-basis: 340px;
+    padding: 20px;
+}
+.wedding__item img {
+    width: 100%;
+    
+}
 
 .how {
     padding: 30px 100px;

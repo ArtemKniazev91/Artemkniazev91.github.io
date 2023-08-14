@@ -15,3 +15,31 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+$(document).ready(function(){
+    $('.multiple-items').slick({
+        arrows:true,
+        dots:false,
+        infinite: true, 
+        slidesToShow: 3, 
+        slidesToScroll: 1,
+        responsive:[
+            {
+                breakpoint: 801,
+                settings: {
+                    slidesToShow:2,
+                    arrows:false,
+                    dots:true,
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow:1,
+                    arrows:false,
+                    dots:true,
+                }
+            }
+            ] 
+    });
+});

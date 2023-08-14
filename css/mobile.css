@@ -24,6 +24,18 @@
 	.price {
 		padding: 50px 5px;
 	}
+	.gallery {
+		padding: 45px 5px;
+	}
+	.wrap {
+		margin: 50px auto;
+	}
+	.wedding {
+		padding: 0px 10px;
+	}
+	.wedding__item {
+		padding: 10px;
+	}
 }
 
 
