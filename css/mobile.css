@@ -36,6 +36,11 @@
 	.wedding__item {
 		padding: 10px;
 	}
+	.delivery_blocks {
+		justify-content: center;
+		align-items: center;
+		margin: 30px;
+	}
 }
 
 

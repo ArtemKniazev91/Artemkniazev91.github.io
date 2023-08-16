@@ -303,7 +303,7 @@ a.logo {
     text-decoration: underline;
 }
 .how_descr {
-    color: #ffdead;
+    color: #ffffff;
     margin-top: 20px;
     font-weight: 300;
 }
@@ -382,7 +382,7 @@ a.logo {
 }
 .menu_link_mobile {
 	margin: 0;
-	color: #ffdead;
+	color: #ffffff;
 	font-size: 15px;
 	font-weight: 300;
 	text-decoration: none;
@@ -502,4 +502,37 @@ a.logo {
 	text-align: center;
 	line-height: 35px;
 	margin-top: 50px;
+}
+
+
+.delivery {
+    padding: 50px 100px;
+}
+.delivery_block_subheader {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.delivery_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.delivery_block {
+    padding: 10px 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+.delivery_block_yellow {
+    box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
+}
+.delivery_block_violet {
+    box-shadow: 0 0 20px 15px rgba(179, 41, 217, 0.8);
+}
+.delivery_ol {
+    list-style-type: disc;
+}
+.delivery-items {
+    color: white;
 }
