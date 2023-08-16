@@ -13,7 +13,7 @@ a {
 .subheader {
     color: white;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 45px;
     text-align: center;
     line-height: 45px;
     margin-bottom: 30px;
@@ -173,9 +173,7 @@ a.logo {
 .about_subheader {
     color: #ffffff;
 	font-weight: 300;
-	font-size: 36px;
 	text-align: center;
-	line-height: 45px;
     margin-bottom: 30px;
 }
 .about_descr {
@@ -195,9 +193,7 @@ a.logo {
 .gallery_subheader {
     color: #ffffff;
 	font-weight: 300;
-	font-size: 36px;
-	text-align: center;
-	line-height: 45px;
+    text-align: center;
     margin-bottom: 30px;
 }
 .wrap {
@@ -266,14 +262,12 @@ a.logo {
 }
 
 .how {
-    padding: 30px 100px;
+    padding: 50px 100px;
 }
 .how_subheader {
     color: #ffffff;
 	font-weight: 300;
-	font-size: 36px;
 	text-align: center;
-	line-height: 45px;
 	margin-bottom: 30px;
 }
 .how_blocks {
@@ -287,24 +281,37 @@ a.logo {
     margin: 30px;
     width: 300px;
     min-height: 300px;
-    padding: 20px;
+    padding: 5px 10px 5px 10px;
+}
+.upper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 52px;
+    width:50%;
+    height: 5px;
+    border-radius: 30px;
+    background-color:rgba(025, 217, 195, 0.8);
+    box-shadow: 0 0 20px 5px rgba(025, 217, 195, 0.8);
+}
+.how_block.is-visible {
     box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
+    transition: box-shadow 1s ease-in-out;
 }
 .how_block_img {
     position: absolute;
     bottom: 5px;
     right: 5px;
 }
-.how_header {
+.how_block_header {
     color: #ffffff;
     text-align: center;
     font-size: 27px;
     font-weight: 300;
-    text-decoration: underline;
 }
-.how_descr {
+.how_block_descr {
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 38px;
     font-weight: 300;
 }
 
@@ -320,7 +327,6 @@ a.logo {
     max-width: 80%;
     height: 5px;
     border-radius: 30px;
-  
     animation: background 3s infinite ;
   }
   .blue_line {
@@ -328,9 +334,28 @@ a.logo {
     background: #19d9c3;
   }
   .orange_line {
-    box-shadow: 0 0 20px 15px rgba(249, 166, 2, 0.8);
-    background: #f9a602;
+    box-shadow: 0 0 20px 15px rgba(241, 157, 59, 0.8);
+    background: #f19d3b;
   }
+  .red_line {
+    box-shadow: 0 0 20px 15px rgba(229, 52, 35, 0.8);
+    background: #e53423;
+  }
+  .white_line {
+    box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.8);
+    background: #ffffff;
+  }
+  .pink_line {
+    box-shadow: 0 0 20px 15px rgba(187, 38, 135, 0.8);
+    background: #bb2687;
+  }
+  .yellow_line {
+    box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
+    background: #ffff00;
+  }
+
+
+
   
   @keyframes background {
     50% {
@@ -396,9 +421,7 @@ a.logo {
 .colors_subheader {
     color: white;
     font-weight: 300;
-    font-size: 36px;
     text-align: center;
-    line-height: 45px;
     margin-bottom: 30px;
 }
 .colors_blocks {
@@ -492,6 +515,34 @@ a.logo {
     transition: box-shadow 1s ease-in-out;
 }
 
+.advantages {
+    padding: 50px;
+}
+.advantages_list {
+    position: relative;
+    width: 80%; 
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.advantages_item {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.advantages_item:last-child {
+    margin-bottom: 0;
+}
+.advantages_item:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../icons/ok_green_icon.svg") center center/cover no-repeat;
+    left:-40px;   
+}
+
 .price {
     padding: 50px 100px;
 }
@@ -508,31 +559,49 @@ a.logo {
 .delivery {
     padding: 50px 100px;
 }
+.delivery_block_icon {
+    display: inline-block;
+    transform: translateY(23%);
+    margin-right: 20px;
+    
+}
 .delivery_block_subheader {
+    display: inline-block;
     color: white;
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 35px;
 }
 .delivery_blocks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .delivery_block {
-    padding: 10px 30px;
-    width: 300px;
-    border-radius: 10px;
+    border-radius: 5%;
+    margin: 30px;
+    width: 320px;
+    min-height: 250px;
+    padding: 20px 10px 20px 50px ;
 }
-.delivery_block_yellow {
-    box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
+.delivery_block.is-visible {
+    box-shadow: 0 0 20px 15px rgba(241, 157, 59, 0.8);
+    transition: box-shadow 1s ease-in-out;
 }
-.delivery_block_violet {
-    box-shadow: 0 0 20px 15px rgba(179, 41, 217, 0.8);
+.delivery_list {
+    list-style-type: none;
+    position: relative; 
 }
-.delivery_ol {
-    list-style-type: disc;
-}
-.delivery-items {
+.delivery-item {
     color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.delivery-item:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../icons/ok_icon.png") center center/cover no-repeat;
+    left:-40px;   
 }
