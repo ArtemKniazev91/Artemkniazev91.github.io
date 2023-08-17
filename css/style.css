@@ -9,6 +9,7 @@ body {
 }
 a {
     text-decoration: none;
+    color: white;
 }
 .subheader {
     color: white;
@@ -327,7 +328,7 @@ a.logo {
     max-width: 80%;
     height: 5px;
     border-radius: 30px;
-    animation: background 3s infinite ;
+    animation: background 3s infinite; 
   }
   .blue_line {
     box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
@@ -604,4 +605,26 @@ a.logo {
     height: 30px;
     background: url("../icons/ok_icon.png") center center/cover no-repeat;
     left:-40px;   
+}
+
+
+
+.bottom {
+    padding: 10px 130px 50px 130px;
+}
+.bottom_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_contacts {
+    margin-right: 37vw;
+}
+.email {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.adress {
+    color: white;
 }
