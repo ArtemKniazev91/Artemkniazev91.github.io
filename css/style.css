@@ -60,6 +60,10 @@ a.logo {
     color: white;
     font-size: 21px;
 }
+.email {
+    color: white;
+    font-size: 21px;
+}
 .social {
     margin-top: 15px;
     display: flex;
@@ -609,22 +613,55 @@ a.logo {
 
 
 
-.bottom {
-    padding: 10px 130px 50px 130px;
+footer{
+    position: relative;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.bottom_menu {
+.footer_contacts {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bottom_contacts {
-    margin-right: 37vw;
+.footer_contacts a {
+    margin: 15px;
+    font-size: 28px;
 }
-.email {
-    display: block;
-    font-size: 21px;
-    margin-bottom: 15px;
+.footer_social,
+.footer_menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
 }
-.adress {
-    color: white;
+.footer_social li,
+.footer_menu li{
+    list-style: none;
+}
+.footer_social li a {
+    margin: 0 10px;
+    display: inline-block;
+} 
+.footer_menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    opacity: 0.75;
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.footer_menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
 }
