@@ -11,6 +11,40 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.line {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+    height: 5px;
+    border-radius: 30px;
+    animation: background 3s infinite; 
+  }
+  .blue_line {
+    box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
+    background: #19d9c3;
+  }
+  .orange_line {
+    box-shadow: 0 0 20px 15px rgba(241, 157, 59, 0.8);
+    background: #f19d3b;
+  }
+  .red_line {
+    box-shadow: 0 0 20px 15px rgba(229, 52, 35, 0.8);
+    background: #e53423;
+  }
+  .white_line {
+    box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.8);
+    background: #ffffff;
+  }
+  .pink_line {
+    box-shadow: 0 0 20px 15px rgba(187, 38, 135, 0.8);
+    background: #bb2687;
+  }
+  .yellow_line {
+    box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
+    background: #ffff00;
+  }
+
 .subheader {
     color: white;
     font-weight: 300;
@@ -20,6 +54,76 @@ a {
     margin-bottom: 30px;
 }
 
+.promo {
+    min-height: 600px;
+	background: url("../img/promo_bg.jpg") center center/cover no-repeat;
+	padding: 10px 130px 50px 130px;
+    position: relative;
+}
+.promo_header {
+	color: #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 78px;
+    margin-top: 80px;
+	margin-bottom: 0;
+}
+.promo_subheader {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 28px;
+	text-align: center;
+	line-height: 34px;
+	margin-bottom: 0;
+	margin-top: 39px;
+}
+.promo_btn {
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}  
+.promo_href {
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+.promo_button {
+    position: relative;
+    height: 63px;
+    width: 259px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
+  .promo_button:before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 50px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite;
+    opacity: 1;
+}
+  .promo_button:hover:active {
+    background: none;
+}
 .header_top {
     display: flex;
     justify-content: space-between;
@@ -71,106 +175,45 @@ a.logo {
     
 }
 
-
-.promo {
-    min-height: 600px;
-	background: url("../img/promo_bg.jpg") center center/cover no-repeat;
-	padding: 10px 130px 50px 130px;
-    position: relative;
-}
-.promo_header {
-	color: #ffffff;
-	font-size: 90px;
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 78px;
-    margin-top: 80px;
-	margin-bottom: 0;
-}
-.promo_subheader {
-	color: #ffffff;
-	font-weight: 300;
-	font-size: 28px;
-	text-align: center;
-	line-height: 34px;
-	margin-bottom: 0;
-	margin-top: 39px;
-}
-
-
-.promo_btn {
-    position: absolute;
-    top: 480px;
-    left: 50%;
-    transform: translateX(-50%);
+/* Мобильное меню */
+.header_mobile {
     display: flex;
-    height: 70px;
-    align-items: center;
-    justify-content: center;
-}  
-
-
-.promo_href {
-    display: block;
-    font-size: 20px;
-    color: white;
+    justify-content: space-between;
 }
-.promo_button {
-    position: relative;
-    height: 63px;
-    width: 259px;
-    border: none;
-    outline: none;
-    color: white;
-    background: black;
-    cursor: pointer;
-    border-radius: 50px;
-    font-size: 20px;
-    /* z-index: 1; */
-  }
-  
-  .promo_button:before {
-    position: absolute;
-    content: '';
-    top: -2px;
-    left: -2px;
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
-    border-radius: 50px;
-    z-index: -1;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    background-size: 400%;
-    transition: opacity .3s ease-in-out;
-    animation: animate 20s linear infinite;
-    opacity: 1;
-  }
-  
-  .promo_button:hover:active {
-    background: none;
-  }
-
-  
-  @keyframes animate {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-
-
-
-
-
-
-
-
-
+.promo_mobile {
+    display: none;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #000000;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 0, 0.8);
+}
+.logo_img {	
+	width: 78px;
+	height: 50px;
+}
+.logo_img_ul {
+	display: none;
+	width: 78px;
+	height: 50px;
+}
+.hamburger {
+	display: none;
+}
+.menu_item_mobile {
+    text-align: center;
+    font-size: 16px;
+    line-height: 55px;
+}
+.menu_link_mobile {
+	margin: 0;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 300;
+	text-decoration: none;
+}
+/* Мобильное меню */
 
 .about {
     padding: 50px 100px;
@@ -188,82 +231,6 @@ a.logo {
 	text-align: center;
 	line-height: 35px;
 	margin-top: 50px;
-}
-
-
-
-.gallery {
-    padding: 50px 100px;
-}
-.gallery_subheader {
-    color: #ffffff;
-	font-weight: 300;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.wrap {
-    max-width: 1140px;
-    margin: 100px auto;
-}
-.wedding {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    padding: 0px 60px;
-}
-.wedding .slick-arrow{
-    position: absolute;
-    top: 50%;
-    margin: -15px 0 0 0; 
-    z-index: 2; 
-    font-size: 0; 
-    width: 30px; 
-    height: 30px; 
-}
-.wedding .slick-arrow.slick-prev{
-    left: 0; 
-    background: url('../icons/left.png') 0 0 / 100% no-repeat;
-    border: none;
-    cursor: pointer;
-}
-
-.wedding .slick-arrow.slick-next{
-    right: 0; 
-    background: url('../icons/right.png') 0 0 / 100% no-repeat;
-    border: none;
-    cursor: pointer;
-}
-.wedding .slick-dots {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-}
-.wedding .slick-dots button {
-    background: #ffffff;
-    border: none;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px; 
-    margin: 5px; 
-    outline: none; 
-    font-size: 0;
-}
-.slick-dots li[class="slick-active"] button {
-    background: gray;
-}
-.wedding__item {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-basis: 340px;
-    padding: 20px;
-}
-.wedding__item img {
-    width: 100%;
-    
 }
 
 .how {
@@ -320,98 +287,78 @@ a.logo {
     font-weight: 300;
 }
 
-
-
-
-
-
-
-.line {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80%;
-    height: 5px;
-    border-radius: 30px;
-    animation: background 3s infinite; 
-  }
-  .blue_line {
-    box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
-    background: #19d9c3;
-  }
-  .orange_line {
-    box-shadow: 0 0 20px 15px rgba(241, 157, 59, 0.8);
-    background: #f19d3b;
-  }
-  .red_line {
-    box-shadow: 0 0 20px 15px rgba(229, 52, 35, 0.8);
-    background: #e53423;
-  }
-  .white_line {
-    box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.8);
-    background: #ffffff;
-  }
-  .pink_line {
-    box-shadow: 0 0 20px 15px rgba(187, 38, 135, 0.8);
-    background: #bb2687;
-  }
-  .yellow_line {
-    box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
-    background: #ffff00;
-  }
-
-
-
-  
-  @keyframes background {
-    50% {
-       background: rgba(0, 0, 0, 0.1);
-      box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.1) inset; 
-    }
-  }
-
-
-/* Мобильное меню */
-
-
-.header_mobile {
-    display: flex;
-    justify-content: space-between;
+.gallery {
+    padding: 50px 100px;
 }
-.promo_mobile {
-    display: none;
-	z-index: 10;
-	position: fixed;
-	width: 100%;
-	height: 60px;
-	background-color: #000000;
-    box-shadow: 0 0 15px 10px rgba(255, 255, 0, 0.8);
-}
-.logo_img {	
-	width: 78px;
-	height: 50px;
-}
-.logo_img_ul {
-	display: none;
-	width: 78px;
-	height: 50px;
-}
-.hamburger {
-	display: none;
-}
-.menu_item_mobile {
-    text-align: center;
-    font-size: 16px;
-    line-height: 55px;
-}
-.menu_link_mobile {
-	margin: 0;
-	color: #ffffff;
-	font-size: 15px;
+.gallery_subheader {
+    color: #ffffff;
 	font-weight: 300;
-	text-decoration: none;
+    text-align: center;
+    margin-bottom: 30px;
 }
-
-/* Мобильное меню */
+.wrap {
+    max-width: 1140px;
+    margin: 100px auto;
+}
+.wedding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding: 0px 60px;
+}
+.wedding .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -15px 0 0 0; 
+    z-index: 2; 
+    font-size: 0; 
+    width: 30px; 
+    height: 30px; 
+}
+.wedding .slick-arrow.slick-prev{
+    left: 0; 
+    background: url('../icons/left.png') 0 0 / 100% no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.wedding .slick-arrow.slick-next{
+    right: 0; 
+    background: url('../icons/right.png') 0 0 / 100% no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.wedding .slick-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.wedding .slick-dots button {
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px; 
+    margin: 5px; 
+    outline: none; 
+    font-size: 0;
+}
+.slick-dots li[class="slick-active"] button {
+    background: gray;
+}
+.wedding__item {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-basis: 340px;
+    padding: 20px;
+}
+.wedding__item img {
+    width: 100%;
+    
+}
 
 .colors {
     padding: 50px;
@@ -604,8 +551,6 @@ a.logo {
     left:-40px;   
 }
 
-
-
 footer{
     position: relative;
     width: 100%;
@@ -657,4 +602,23 @@ footer p {
     text-align: center;
     margin-top: 15px;
     font-size: 1.1em;
+}
+
+
+@keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+@keyframes background {
+    50% {
+       background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.1) inset; 
+    }
 }

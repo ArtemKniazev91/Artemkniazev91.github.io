@@ -85,7 +85,6 @@
 	.menu_mobile_active {
 		left: 0px;
 	}
-
 	.menu_item_mobile {
 		padding-right: 0px;
 		border: none;
@@ -101,8 +100,6 @@
 	.contacts {
 		margin-top: 50px;
 	}
-
-
 	.hamburger {
 		display: block;
 		position: absolute;
