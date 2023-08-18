@@ -46,6 +46,18 @@
 
 
 @media(max-width: 800px) {
+	.back-to-top {
+		position: fixed;
+		z-index: 100;
+		bottom: -100px;
+		right: 30px;
+		cursor: pointer;
+		transition: 0.3s all;
+	}
+	.back-to-top.active {
+		bottom: 30px;
+		transition: 0.3s all;
+	}
 	.promo {
 		margin-top: 60px;
 	}

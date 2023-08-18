@@ -81,3 +81,14 @@ $('a[href^="#"').on('click', function() {
         scrollTop: $(href).offset().top
     });
 });
+
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if(scrolled > 350) {
+        $('.back-to-top').addClass('active');
+    } else {
+        $('.back-to-top').removeClass('active');
+    }
+});
