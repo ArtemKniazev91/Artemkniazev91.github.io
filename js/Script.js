@@ -45,7 +45,7 @@ $(document).ready(function(){
 });
 
 
-var $animation_elements = $('.colors_block, .how_block, .delivery_block');
+var $animation_elements = $('.colors_block, .how_block, .delivery_block, .line');
 var $window = $(window);
 
 function check_if_in_view() {

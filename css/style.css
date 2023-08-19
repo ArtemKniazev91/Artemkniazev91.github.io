@@ -21,31 +21,37 @@ a {
     max-width: 80%;
     height: 5px;
     border-radius: 30px;
-    animation: background 3s infinite; 
+    /* animation: background 3s infinite;  */
   }
-  .blue_line {
+  .blue_line.is-visible {
     box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
     background: #19d9c3;
+    transition: box-shadow 1s ease-in-out;
   }
-  .orange_line {
+  .orange_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(241, 157, 59, 0.8);
     background: #f19d3b;
+    transition: box-shadow 1s ease-in-out;
   }
-  .red_line {
+  .red_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(229, 52, 35, 0.8);
     background: #e53423;
+    transition: box-shadow 1s ease-in-out;
   }
-  .white_line {
+  .white_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.8);
     background: #ffffff;
+    transition: box-shadow 1s ease-in-out;
   }
-  .pink_line {
+  .pink_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(187, 38, 135, 0.8);
     background: #bb2687;
+    transition: box-shadow 1s ease-in-out;
   }
-  .yellow_line {
+  .yellow_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
     background: #ffff00;
+    transition: box-shadow 1s ease-in-out;
   }
 
 .subheader {
@@ -619,9 +625,9 @@ footer p {
       background-position: 0 0;
     }
   }
-@keyframes background {
+/* @keyframes background {
     50% {
        background: rgba(0, 0, 0, 0.1);
       box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.1) inset; 
     }
-}
+} */
