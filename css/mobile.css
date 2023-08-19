@@ -47,6 +47,7 @@
 
 @media(max-width: 800px) {
 	.back-to-top {
+		display: block;
 		position: fixed;
 		z-index: 100;
 		bottom: -100px;
