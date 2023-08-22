@@ -27,6 +27,9 @@
 	.gallery {
 		padding: 45px 5px;
 	}
+	.form {
+		padding: 50px 5px;
+	}
 	.wrap {
 		margin: 50px auto;
 	}
@@ -160,6 +163,12 @@
 @media(max-width: 450px) {
 	.subheader {
 		font-size: 36px;
+	}
+	.form_block {
+		height: 270px;
+	}
+	.form_descr {
+		font-size: 33px;
 	}
 	.colors_block {
 		position: relative;

@@ -38,6 +38,11 @@ a {
     background: #e53423;
     transition: box-shadow 1s ease-in-out;
   }
+  .green_line.is-visible {
+    box-shadow: 0 0 20px 15px rgba(0, 128, 0, 0.8);
+    background: green;
+    transition: box-shadow 1s ease-in-out;
+  }
   .white_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.8);
     background: #ffffff;
@@ -367,6 +372,55 @@ a.logo {
 .wedding__item img {
     width: 100%;
     
+}
+
+.form {
+    padding: 50px 100px;
+}
+.form_blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form_block {
+    width: 400px;
+    height: 350px;
+    margin: 30px;
+    position: relative;
+}
+.form_img {
+    width: 100%;
+}
+.form_descr_1 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    opacity: 0;
+}
+.form_descr_1.is-visible {
+    transition: 2s;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 1;
+}
+.form_descr_2 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    opacity: 0;
+}
+.form_descr_2.is-visible {
+    transition: 2s;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
 }
 
 .colors {
