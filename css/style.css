@@ -38,6 +38,11 @@ a {
     background: #e53423;
     transition: box-shadow 1s ease-in-out;
   }
+  .violet_line.is-visible {
+    box-shadow: 0 0 20px 15px rgba(238, 130, 238, 0.8);
+    background: violet;
+    transition: box-shadow 1s ease-in-out;
+  }
   .green_line.is-visible {
     box-shadow: 0 0 20px 15px rgba(0, 128, 0, 0.8);
     background: green;
@@ -422,6 +427,81 @@ a.logo {
     transform: translateX(-50%);
     opacity: 1;
 }
+.form_material {
+    color: #ffffff;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: left;
+    font-size: 29px;
+}
+
+.install {
+    padding: 50px 100px;
+    min-height: 500px;
+}
+.install_blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    margin: 30px;
+}
+.click {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 70px;
+    animation: heartbeat 1s ease infinite;
+    z-index: 10;
+}
+.card_subheader {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.front_3 {
+    bottom: -13px;
+}
+.front img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+.back img {
+    width: auto;
+    height: 70%;
+}
+.back  {
+    transform: rotateY(180deg);
+}
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+.card:hover .back {
+    transform: rotateY(360deg);
+} 
 
 .colors {
     padding: 50px;
@@ -679,6 +759,17 @@ footer p {
       background-position: 0 0;
     }
   }
+  @keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1); 
+    }
+}
 /* @keyframes background {
     50% {
        background: rgba(0, 0, 0, 0.1);

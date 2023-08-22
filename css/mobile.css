@@ -45,6 +45,9 @@
 	.delivery_blocks {
 		margin: 30px;
 	}
+	.install {
+		padding: 50px 5px;
+	}
 }
 
 
@@ -155,6 +158,9 @@
 	.footer_contacts a {
 		margin: 0 15px;
 	}
+	.click {
+		display: block;
+	}
 
 
 
@@ -166,9 +172,6 @@
 	}
 	.form_block {
 		height: 270px;
-	}
-	.form_descr {
-		font-size: 33px;
 	}
 	.colors_block {
 		position: relative;
