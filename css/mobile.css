@@ -27,6 +27,12 @@
 	.gallery {
 		padding: 45px 5px;
 	}
+	.animated_neon {
+		padding: 50px 5px;
+	}
+	.maybe {
+		padding: 45px 5px;
+	}
 	.form {
 		padding: 50px 5px;
 	}
@@ -161,17 +167,20 @@
 	.click {
 		display: block;
 	}
-
-
-
+	.card_subheader {
+		font-size: 30px;
+	}
 }
 
 @media(max-width: 450px) {
 	.subheader {
-		font-size: 36px;
+		font-size: 35px;
 	}
 	.form_block {
 		height: 270px;
+	}
+	.animated_neon_img {
+		width: 80%;
 	}
 	.colors_block {
 		position: relative;
