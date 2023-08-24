@@ -256,10 +256,13 @@ a.logo {
 .about_descr {
     color: #ffffff;
 	font-weight: 300;
-	font-size: 25px;
+	font-size: 24px;
 	text-align: center;
 	line-height: 35px;
 	margin-top: 50px;
+}
+.about_descr_left {
+    text-align: left;
 }
 
 .how {
@@ -282,13 +285,13 @@ a.logo {
     margin: 30px;
     width: 300px;
     min-height: 300px;
-    padding: 5px 10px 5px 10px;
+    padding: 20px;
 }
 .upper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 52px;
+    top: 70px;
     width:50%;
     height: 5px;
     border-radius: 30px;
@@ -491,7 +494,7 @@ a.logo {
 .click {
     display: none;
     position: absolute;
-    right: 15px;
+    right: -20px;
     top: 70px;
     animation: heartbeat 1s ease infinite;
     z-index: 5;
@@ -655,7 +658,13 @@ a.logo {
     font-size: 16px;
     list-style-type: none;
     margin-bottom: 15px;
+    transform: translateX(-150%);
 }
+.advantages_item.is-visible:nth-child(1) {animation: ani 0.5s ease-in-out forwards;}
+.advantages_item.is-visible:nth-child(2) {animation: ani 0.5s forwards 1s;}
+.advantages_item.is-visible:nth-child(3) {animation: ani 0.5s forwards 2s;}
+.advantages_item.is-visible:nth-child(4) {animation: ani 0.5s forwards 3s;}
+.advantages_item.is-visible:nth-child(5) {animation: ani 0.5s forwards 4s;}
 .advantages_item:last-child {
     margin-bottom: 0;
 }
@@ -807,6 +816,16 @@ footer p {
         transform: scale(1); 
     }
 }
+@keyframes ani {
+    0% {transform: translateX(-150%);}
+    /* 15% {transform: translateX(5%);}
+    30% {transform: translateX(-5%);}
+    45% {transform: translateX(3%);}
+    60% {transform: translateX(-3%);}
+    75% {transform: translateX(1%);}
+    85% {transform: translateX(-1%);} */
+    100% {transform: translateX(0);}
+  }
 /* @keyframes background {
     50% {
        background: rgba(0, 0, 0, 0.1);
