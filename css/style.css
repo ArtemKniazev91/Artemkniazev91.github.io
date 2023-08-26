@@ -493,11 +493,17 @@ a.logo {
 }
 .click {
     display: none;
+    width: 200px;
+    height: 200px;
     position: absolute;
-    right: -20px;
-    top: 70px;
-    animation: heartbeat 1s ease infinite;
+    right: center;
+    top: center;
+    transform: translate(30%, 70%);
+    /* animation: heartbeat 2s ease infinite; */
     z-index: 5;
+}
+.click.is-visible {
+    animation: fade 2s ease forwards;
 }
 .card_subheader {
     position: absolute;
@@ -661,10 +667,10 @@ a.logo {
     transform: translateX(-150%);
 }
 .advantages_item.is-visible:nth-child(1) {animation: ani 0.5s ease-in-out forwards;}
-.advantages_item.is-visible:nth-child(2) {animation: ani 0.5s forwards 1s;}
-.advantages_item.is-visible:nth-child(3) {animation: ani 0.5s forwards 2s;}
-.advantages_item.is-visible:nth-child(4) {animation: ani 0.5s forwards 3s;}
-.advantages_item.is-visible:nth-child(5) {animation: ani 0.5s forwards 4s;}
+.advantages_item.is-visible:nth-child(2) {animation: ani 0.5s forwards 0.5s;}
+.advantages_item.is-visible:nth-child(3) {animation: ani 0.5s forwards 1s;}
+.advantages_item.is-visible:nth-child(4) {animation: ani 0.5s forwards 1.5s;}
+.advantages_item.is-visible:nth-child(5) {animation: ani 0.5s forwards 2s;}
 .advantages_item:last-child {
     margin-bottom: 0;
 }
@@ -805,17 +811,45 @@ footer p {
       background-position: 0 0;
     }
   }
-  @keyframes heartbeat {
+   /* @keyframes heartbeat {
     from {
         transform: scale(1);
     }
+    25% {
+        transform: scale(1.3);
+    }
     50% {
+        transform: scale(1);
+    }
+    75% {
         transform: scale(1.3);
     }
     to {
-        transform: scale(1); 
+        transform: scale(1) opacity(0); 
+    } 
+} */
+@keyframes fade {
+    from {
+      opacity: 1;
+      visibility: visible;
     }
-}
+    20% {
+        opacity: 0.5;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 @keyframes ani {
     0% {transform: translateX(-150%);}
     /* 15% {transform: translateX(5%);}
