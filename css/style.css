@@ -493,18 +493,17 @@ a.logo {
 }
 .click {
     display: none;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     position: absolute;
-    right: center;
-    top: center;
-    transform: translate(30%, 70%);
-    /* animation: heartbeat 2s ease infinite; */
+    right: 74px;
+    top: 156px;
+    animation: heartbeat 2s ease infinite; 
     z-index: 5;
 }
-.click.is-visible {
+/* .click.is-visible {
     animation: fade 2s ease forwards;
-}
+} */
 .card_subheader {
     position: absolute;
     width: 100%;
@@ -541,6 +540,9 @@ a.logo {
 }
 .back  {
     transform: rotateY(180deg);
+}
+.card:hover .click {
+    display: none;
 }
 .card:hover .front {
     transform: rotateY(180deg);
@@ -811,7 +813,7 @@ footer p {
       background-position: 0 0;
     }
   }
-   /* @keyframes heartbeat {
+   @keyframes heartbeat {
     from {
         transform: scale(1);
     }
@@ -827,8 +829,8 @@ footer p {
     to {
         transform: scale(1) opacity(0); 
     } 
-} */
-@keyframes fade {
+} 
+/* @keyframes fade {
     from {
       opacity: 1;
       visibility: visible;
@@ -849,7 +851,7 @@ footer p {
       opacity: 0;
       visibility: hidden;
     }
-  }
+  } */
 @keyframes ani {
     0% {transform: translateX(-150%);}
     /* 15% {transform: translateX(5%);}
