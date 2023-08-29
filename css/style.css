@@ -384,15 +384,18 @@ a.logo {
 }
 .wedding__item {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items:center;
     flex-basis: 340px;
     padding: 20px;
 }
 .wedding__item img {
-    width: 100%;
-    
+    width: 100%; 
 }
+.slick-slider .slick-list, .slick-slider .slick-track{
+    display: flex;
+    align-items: center
+  }
 
 .animated_neon {
     padding: 50px 100px;
