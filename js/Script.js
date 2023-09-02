@@ -45,19 +45,19 @@ $(document).ready(function(){
 });
 
 
-var $animation_elements = $('.colors_block, .how_block, .delivery_block, .line, .form_descr, .advantages_item, .click');
-var $window = $(window);
+const $animation_elements = $('.colors_block, .how_block, .delivery_block, .line, .form_descr, .advantages_item, .click');
+const $window = $(window);
 
 function check_if_in_view() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
+  const window_height = $window.height();
+  const window_top_position = $window.scrollTop();
+  const window_bottom_position = (window_top_position + window_height);
  
   $.each($animation_elements, function() {
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
+    const $element = $(this);
+    const element_height = $element.outerHeight();
+    const element_top_position = $element.offset().top;
+    const element_bottom_position = (element_top_position + element_height);
  
 
     if ((element_bottom_position >= window_top_position) &&
