@@ -708,6 +708,7 @@ a.logo {
 
 .advantages {
     padding: 50px;
+    background: url("../img/gallery/photo_29_bg.webp") center center/cover no-repeat;
 }
 .advantages_list {
     position: relative;
@@ -742,6 +743,7 @@ a.logo {
 
 .price {
     padding: 50px 100px;
+    background: url("../img/dollar.jpg") center center/cover no-repeat;
 }
 .price_descr {
     color: #ffffff;
