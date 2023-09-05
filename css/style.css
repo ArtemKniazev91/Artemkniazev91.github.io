@@ -415,7 +415,9 @@ a.logo {
 }
 
 .maybe {
+    position: relative;
     padding: 50px 100px;
+    box-shadow: 0 0 20px 20px black;
 }
 .maybe_subheader {
     color: #ffffff;
@@ -423,59 +425,10 @@ a.logo {
     text-align: center;
     margin-bottom: 30px;
 }
-#carousel {
-    perspective: 1000px;
-    overflow: hidden;
-}
-#carousel #scene {
-    width: 42%;
-    margin: 40px auto 0 auto;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-}
-#carousel #scene .carousel_item {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 20px 0 10px;
-    backface-visibility: hidden;
-}
-#carousel #scene .carousel_item:not(:first-of-type) {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-#carousel #carousel_btn {
-    width: 100px;
-    margin: 20px auto 0 auto;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-#carousel #carousel_btn .btn {
-    width: 45px;
-    height: 45px;
-    line-height: 40px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    float: left;
-    color: #2f2f2f;
-    font-family: sans-serif;
-    font-size: 12px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.prev {
-    background: url("../icons/left.png") center center/cover no-repeat;
-}
-.next {
-    background: url("../icons/right.png") center center/cover no-repeat;
-}
-#carousel #carousel_btn > div:first-child {
-    margin-right: 10px;
-}
 
 .form {
     padding: 50px 100px;
+    background: url("../img/photo_32_bg.webp") center center/cover no-repeat;
 }
 .form_blocks {
     display: flex;
@@ -531,8 +484,10 @@ a.logo {
 }
 
 .install {
+    position: relative;
     padding: 50px 100px;
     min-height: 500px;
+    box-shadow: 0 0 20px 20px black;
 }
 .install_blocks {
     display: flex;
@@ -607,7 +562,10 @@ a.logo {
 } 
 
 .colors {
+    position: relative;
     padding: 50px;
+    box-shadow: 0 0 20px 20px black;
+    z-index: 5;
 }
 .colors_subheader {
     color: white;
@@ -708,7 +666,7 @@ a.logo {
 
 .advantages {
     padding: 50px;
-    background: url("../img/gallery/photo_29_bg.webp") center center/cover no-repeat;
+    background: url("../img/photo_29_bg.webp") center center/cover no-repeat;
 }
 .advantages_list {
     position: relative;
@@ -742,8 +700,9 @@ a.logo {
 }
 
 .price {
-    padding: 50px 100px;
-    background: url("../img/dollar.jpg") center center/cover no-repeat;
+    padding: 50px 300px;
+    background: url("../img/dollar_bg.webp") center center/cover no-repeat;
+    position: relative;
 }
 .price_descr {
     color: #ffffff;
@@ -756,7 +715,9 @@ a.logo {
 
 
 .delivery {
+    position: relative;
     padding: 50px 100px;
+    box-shadow: 0 0 20px 20px black;
 }
 .delivery_block_icon {
     display: inline-block;
