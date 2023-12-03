@@ -5,9 +5,7 @@
     font-family: 'Marmelad', sans-serif;
 }
 body {
-    /* background-color: black; */
-    background: url("../img/Body_bg.jpg") top center/cover;
-    background-attachment: fixed;
+    background-color: black;
 }
 a {
     text-decoration: none;
@@ -89,7 +87,7 @@ a {
 
 .promo {
     min-height: 600px;
-	/* background: url("../img/promo_bg.webp") center center/cover no-repeat; */
+	background: url("../img/promo_bg.webp") center center/cover no-repeat;
 	padding: 10px 130px 50px 130px;
     position: relative;
 }
@@ -417,9 +415,7 @@ a.logo {
 }
 
 .maybe {
-    position: relative;
     padding: 50px 100px;
-    box-shadow: 0 0 20px 20px black;
 }
 .maybe_subheader {
     color: #ffffff;
@@ -430,7 +426,6 @@ a.logo {
 
 .form {
     padding: 50px 100px;
-    background: url("../img/photo_32_bg.webp") center center/cover no-repeat;
 }
 .form_blocks {
     display: flex;
@@ -486,10 +481,8 @@ a.logo {
 }
 
 .install {
-    position: relative;
     padding: 50px 100px;
     min-height: 500px;
-    box-shadow: 0 0 20px 20px black;
 }
 .install_blocks {
     display: flex;
@@ -564,10 +557,7 @@ a.logo {
 } 
 
 .colors {
-    position: relative;
     padding: 50px;
-    box-shadow: 0 0 20px 20px black;
-    z-index: 5;
 }
 .colors_subheader {
     color: white;
@@ -668,7 +658,6 @@ a.logo {
 
 .advantages {
     padding: 50px;
-    background: url("../img/photo_29_bg.webp") center center/cover no-repeat;
 }
 .advantages_list {
     position: relative;
@@ -702,9 +691,7 @@ a.logo {
 }
 
 .price {
-    padding: 50px 300px;
-    background: url("../img/dollar_bg.webp") center center/cover no-repeat;
-    position: relative;
+    padding: 50px 100px;
 }
 .price_descr {
     color: #ffffff;
@@ -717,9 +704,7 @@ a.logo {
 
 
 .delivery {
-    position: relative;
     padding: 50px 100px;
-    box-shadow: 0 0 20px 20px black;
 }
 .delivery_block_icon {
     display: inline-block;

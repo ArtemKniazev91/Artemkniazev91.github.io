@@ -92,7 +92,3 @@ $(window).scroll(function() {
         $('.back-to-top').removeClass('active');
     }
 });
-
-window.addEventListener('load', function() {
-    carouselRUN();
-}, false);
