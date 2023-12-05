@@ -5,10 +5,7 @@
     font-family: 'Marmelad', sans-serif;
 }
 body {
-    /* background-color: black; */
-    background: url("../img/Body_bg.jpg") top center/cover no-repeat;
-    background-attachment: fixed;
-
+    background-color: black;
 }
 a {
     text-decoration: none;
@@ -90,7 +87,7 @@ a {
 
 .promo {
     min-height: 600px;
-	/* background: url("../img/promo_bg.webp") center center/cover no-repeat; */
+	background: url("../img/promo_bg.webp") center center/cover no-repeat;
 	padding: 10px 130px 50px 130px;
     position: relative;
 }
