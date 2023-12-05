@@ -25,11 +25,11 @@ a {
     border-radius: 30px;
     /* animation: background 3s infinite;  */
   }
-  .turq_line.is-visible {
+  /* .turq_line.is-visible {
     box-shadow: 0 0 20px 15px rgba(025, 217, 195, 0.8);
     background: #19d9c3;
     transition: box-shadow 1s ease-in-out;
-  }
+  } */
   .orange_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(241, 157, 59, 0.8);
     background: #f19d3b;
@@ -70,11 +70,11 @@ a {
     background: #bb2687;
     transition: box-shadow 1s ease-in-out;
   }
-  .yellow_line.is-visible  {
+  /* .yellow_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(255, 255, 0, 0.8);
     background: #ffff00;
     transition: box-shadow 1s ease-in-out;
-  }
+  } */
 
 .subheader {
     color: white;
@@ -268,6 +268,7 @@ a.logo {
 }
 
 .how {
+    background: url("../img/bg_2.jpg") center center/cover no-repeat;
     padding: 50px 100px;
 }
 .how_subheader {
@@ -282,6 +283,7 @@ a.logo {
     justify-content: center;
 }
 .how_block {
+    background-color: black ;
     position: relative;
     border-radius: 5%;
     margin: 30px;
