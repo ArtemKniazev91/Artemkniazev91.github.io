@@ -40,26 +40,26 @@ a {
     background: #e53423;
     transition: box-shadow 1s ease-in-out;
   }
-  .lime_line.is-visible  {
+  /* .lime_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(204, 255, 0, 0.8);
     background: #CCFF00;
     transition: box-shadow 1s ease-in-out;
-  }
-  .blue_line.is-visible  {
+  } */
+  /* .blue_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(0, 0, 255, 0.8);
     background: blue;
     transition: box-shadow 1s ease-in-out;
-  }
-  .violet_line.is-visible {
+  } */
+  /* .violet_line.is-visible {
     box-shadow: 0 0 20px 15px rgba(238, 130, 238, 0.8);
     background: violet;
     transition: box-shadow 1s ease-in-out;
-  }
-  .green_line.is-visible {
+  } */
+  /* .green_line.is-visible {
     box-shadow: 0 0 20px 15px rgba(0, 128, 0, 0.8);
     background: green;
     transition: box-shadow 1s ease-in-out;
-  }
+  } */
   .white_line.is-visible  {
     box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.8);
     background: #ffffff;
@@ -428,6 +428,7 @@ a.logo {
 
 .form {
     padding: 50px 100px;
+    background: url("../img/bg_3.webp") center center/cover no-repeat;
 }
 .form_blocks {
     display: flex;
@@ -483,6 +484,7 @@ a.logo {
 }
 
 .install {
+    background: url("../img/bg_1.webp") center center/cover no-repeat;
     padding: 50px 100px;
     min-height: 500px;
 }
