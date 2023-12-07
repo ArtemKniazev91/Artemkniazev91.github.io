@@ -16,6 +16,8 @@ a {
 }
 
 .line {
+    position: absolute;
+    top: -15px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -247,6 +249,7 @@ a.logo {
 /* Мобильное меню */
 
 .about {
+    background-color: black ;
     position: relative;
     padding: 50px 100px;
     box-shadow: 0px 5px 8px 15px rgba(0, 0, 0, 1);
@@ -269,16 +272,11 @@ a.logo {
     text-align: left;
 }
 
-.how 
-    {
-        background: url("../img/bg_2.webp");
-        background-position: left bottom;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        }
-    /* background: url("../img/bg_2.webp") center center/cover no-repeat;
-    padding: 50px 100px; */
+.how {
+    /* background: url("../img/bg_2.webp") center center/cover no-repeat; */
+    padding: 50px 100px;
+    position: relative;
+}
 .how_subheader {
     color: #ffffff;
 	font-weight: 300;
@@ -289,6 +287,16 @@ a.logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.how_blocks:before {
+    content: '';
+    background: url("../img/bg_2.webp") center center/cover no-repeat;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 .how_block {
     background-color: black ;
@@ -332,6 +340,7 @@ a.logo {
 }
 
 .gallery {
+    background-color: black ;
     position: relative;
     box-shadow: 0px 5px 8px 15px rgba(0, 0, 0, 1);
     padding: 50px 100px;
@@ -410,6 +419,7 @@ a.logo {
   }
 
 .animated_neon {
+    background-color: black ;
     position: relative;
     box-shadow: 0px 5px 8px 15px rgba(0, 0, 0, 1);
     padding: 50px 100px;
@@ -431,6 +441,7 @@ a.logo {
 .maybe {
     position: relative;
     box-shadow: 0px 5px 8px 15px rgba(0, 0, 0, 1);
+    background-color: black ;
     padding: 50px 100px;
 }
 .maybe_subheader {
@@ -575,6 +586,7 @@ a.logo {
 } 
 
 .colors {
+    background-color: black ;
     position: relative;
     box-shadow: 0px 5px 8px 15px rgba(0, 0, 0, 1);
     padding: 50px;
@@ -678,6 +690,7 @@ a.logo {
 
 .advantages {
     padding: 50px;
+    background-color: black ;
 }
 .advantages_list {
     position: relative;
@@ -711,7 +724,9 @@ a.logo {
 }
 
 .price {
+    position: relative;
     padding: 50px 100px;
+    background-color: black ;
 }
 .price_descr {
     color: #ffffff;
@@ -724,7 +739,9 @@ a.logo {
 
 
 .delivery {
+    position: relative;
     padding: 50px 100px;
+    background-color: black ;
 }
 .delivery_block_icon {
     display: inline-block;
@@ -774,6 +791,7 @@ a.logo {
 }
 
 footer{
+    background-color: black ;
     position: relative;
     width: 100%;
     padding: 20px 50px;
