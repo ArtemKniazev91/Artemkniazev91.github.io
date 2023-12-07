@@ -269,10 +269,16 @@ a.logo {
     text-align: left;
 }
 
-.how {
-    background: url("../img/bg_2.webp") center center/cover no-repeat;
-    padding: 50px 100px;
-}
+.how 
+    {
+        background: url("../img/bg_2.webp");
+        background-position: left bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+    /* background: url("../img/bg_2.webp") center center/cover no-repeat;
+    padding: 50px 100px; */
 .how_subheader {
     color: #ffffff;
 	font-weight: 300;
