@@ -167,9 +167,6 @@
 	.click {
 		display: block;
 	}
-	.card_subheader {
-		font-size: 30px;
-	}
 }
 
 @media(max-width: 450px) {
