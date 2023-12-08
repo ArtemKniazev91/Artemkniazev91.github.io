@@ -16,6 +16,17 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+$(document).ready(function () {
+    $(".element-card").on("click", function () {
+      if ($(this).hasClass("open")) {
+        $(this).removeClass("open");
+      } else {
+        $(".element-card").removeClass("open");
+        $(this).addClass("open");
+      }
+    });
+  });
+
 $(document).ready(function(){
     $('.multiple-items').slick({
         arrows:true,
